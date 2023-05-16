@@ -1,0 +1,26 @@
+.wrapper {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(94deg, #ff0000, #faff00, #3cff00, #00dfff, #005dff, #8300ff, #ff00f4, #ff00d3);
+  background-size: 1600% 1600%;
+
+  -webkit-animation: AnimationName 9s ease infinite;
+  -moz-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 47%}
+    50%{background-position:100% 54%}
+    100%{background-position:0% 47%}
+}

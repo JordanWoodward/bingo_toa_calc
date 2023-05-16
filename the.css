@@ -8,7 +8,9 @@ body {
   background: linear-gradient(#141e30, #243b55);
 }
 
-.wrapper {
+body {
+  height:100%;
+  width: 100%;
 }
 
 #inputForm {
@@ -213,4 +215,9 @@ body {
   color: #fff;
   border-radius: 5px;
   text-shadow: 0 0 0.5px #54566a, 0 0 2.5px #54566a, 0 0 5px #54566a, 0 0 10px #54566a;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0px;
 }

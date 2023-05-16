@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TOA Tile Points Calculator</title>
+    <link rel="stylesheet" href="the.css">
+    <script type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box-box" id="inputForm">
+        <h2>TOA Point Calculator</h2>
+        <form action="/form-submit" method="post" id="formForm">
+          <div class="input-field">
+              <label for="invocation" id="invo_label">Invocation Level:</label>
+              <input type="range" id="invocation" name="invoRange" min="100" max="300" value="100" step="50" oninput="this.form.invoInput.value=this.value" />
+              <input type="number" id="invocation-number" name="invoInput" min="100" max="300" value="100" step="50" oninput="this.form.invoRange.value=this.value" />
+          </div>
+          <div class="input-field">
+              <label for="team_size">Team Size:</label>
+              <input type="number" id="team_size" name="user_team-size" min="1" max="8" value="1" />
+          </div>
+          <div class="input-field">
+              <label for="barrows_pieces">Barrows Pieces:</label>
+              <input type=number id="barrows_pieces" name="user_barrows_pieces" min="0" max="8" value="0" />
+          </div>
+          <a href="#">
+            <button type="submit">Submit
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </a>
+        </form>
+      </div>
+      <div class="box-box" id="output-box">
+        <h2>Output</h2>
+        <p>Points: <span id = "display_points"></span> </p>
+      </div>
+    </div>
+    <script src="./points.js"></script>
+  </body>
+</html>
